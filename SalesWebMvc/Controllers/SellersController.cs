@@ -97,7 +97,7 @@ namespace SalesWebMvc.Controllers
             }
             catch (DbConcurrencyException e)
             {
-                return RedirectToAction(nameof(Error), new { message = e.Message });
+                return RedirectToAction(nameof(Error), new { message = e.Message});
             }
         }
         public IActionResult Error(string message)
